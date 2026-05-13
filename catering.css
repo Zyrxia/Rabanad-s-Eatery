@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF1C5;
+    overflow-x: hidden;
+    font-family: 'Atma', cursive;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    height: 100px;
+    background: #4C1200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* NAV LINKS */
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* EACH NAV ITEM */
+.nav-links li {
+    width: 140px; /* Equal spacing */
+    text-align: center;
+}
+
+/* LINKS */
+.nav-links li a {
+    color: #FFF1C5;
+    font-size: 24px;
+    font-family: 'Atma', cursive;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #E89B2F;
+}
+
+/* CENTER LOGO ITEM */
+.logo-item {
+    width: 220px; /* Bigger space for logo */
+    position: relative;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* LOGO */
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    width: 210px;
+    height: 210px;
+    background: #4C1200;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 10;
+}
+
+/* LOGO IMAGE */
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  
+}
+
+/* HERO TEXT */
+.hero-text {
+    text-align: center;
+    padding: 180px 20px 20px;
+}
+
+/* HERO TEXT STYLES */
+.hero-text h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #6FA86B;
+    margin: 0 0 8px 0;
+    font-family: 'Atma', cursive;
+}
+
+.hero-text h3 {
+    font-size: 48px;
+    color: #E88A2A;
+    margin: 0;
+    font-family: 'Atma', cursive;
+    font-weight: 700;
+}
+
+/* CATERING SECTION */
+.catering-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px;
+    padding: 0 80px 80px 80px;
+    background: #FFF1C5;
+    min-height: 60vh;
+}
+
+/* TEXT CONTENT */
+.text-content {
+    flex: 1;
+    max-width: 500px;
+}
+
+/* TITLE */
+.text-content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #6FA86B;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+/* PARAGRAPHS */
+.text-content p {
+    font-size: 22px;
+    color: #E88A2A;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* BUTTON - COMBINED HOME STYLE + HOVER EFFECTS */
+.text-content .contactbutton {
+    margin-top: 20px;
+}
+
+.text-content .contactbutton a {
+    background: #4C1200;
+    color: #FFF1C5;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-family: 'Atma', cursive;
+    font-size: 24px;
+    font-weight: 700;
+    transition: 0.3s;
+    display: inline-block;
+    box-shadow: 0 5px 15px rgba(76,18,0,0.3);
+}
+
+.text-content .contactbutton a:hover {
+    background: #915d5c;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(76,18,0,0.4);
+}
+
+/* IMAGE CONTAINER */
+.image-content {
+    flex: 0 0 460px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+/* IMAGE */
+.image-content img {
+    width: 460px;
+    height: 320px;
+    max-width: 460px;
+    border-radius: 8px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+    transition: all 0.4s ease;
+    object-fit: cover;
+}
+
+.image-content img:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+}

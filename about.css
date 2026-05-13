@@ -1,0 +1,172 @@
+body {
+   margin: 0;
+   padding: 0;
+   background: #FFF1C5;
+   overflow-x: hidden;
+}
+
+
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    height: 100px;
+    background: #4C1200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* NAV LINKS */
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* EACH NAV ITEM */
+.nav-links li {
+    width: 140px; /* Equal spacing */
+    text-align: center;
+}
+
+/* LINKS */
+.nav-links li a {
+    color: #FFF1C5;
+    font-size: 24px;
+    font-family: 'Atma', cursive;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #E89B2F;
+}
+
+/* CENTER LOGO ITEM */
+.logo-item {
+    width: 220px; /* Bigger space for logo */
+    position: relative;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* LOGO */
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    width: 210px;
+    height: 210px;
+    background: #4C1200;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 10;
+}
+
+/* LOGO IMAGE */
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  
+}
+
+
+/* HERO SECTION */
+.content {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+
+   padding: 140px 0 50px 80px;
+
+
+   position: relative;
+   overflow: hidden;
+}
+
+/* IMAGE W/ TEXT ABOVE */
+
+.container {
+    position: relative; /* Essential for positioning children */
+    object-fit: cover;
+    text-align: center;
+    color: white;
+    transform: translate(0%, 10%);
+  }
+
+  .centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -41%); /* Perfectly centers the element */
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    text-shadow: 2px 2px 4px #000000; /* Makes text pop against busy backgrounds */
+  }
+
+  .container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+  }
+
+  /* Bottom Text and img */
+
+  /* BOTTOM SECTION */
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 180px 80px 80px 80px;
+    gap: 50px;
+}
+
+/* LEFT TEXT */
+.text{
+    flex: 1;
+}
+
+.text p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    color: #4C1200;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* RIGHT IMAGE */
+.image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image img{
+    width: 100%;
+    max-width: 700px;
+    height: 400px;
+
+    
+    object-fit:cover;
+}

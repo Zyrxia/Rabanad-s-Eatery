@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFF1C5;
+    overflow-x: hidden;
+    font-family: 'Atma', cursive;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    width: 100%;
+    height: 100px;
+
+    background: #4C1200;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+}
+
+
+/* ================= NAV LINKS ================= */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* EACH NAV ITEM */
+.nav-links li {
+    width: 140px;
+    text-align: center;
+}
+
+
+/* LINKS */
+.nav-links li a {
+    color: #FFF1C5;
+
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+/* HOVER */
+.nav-links li a:hover,
+.nav-links li a.active {
+    color: #E89B2F;
+}
+
+
+/* ================= CENTER LOGO ================= */
+
+.logo-item {
+    width: 220px;
+
+    position: relative;
+
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+/* ROUND LOGO */
+.logo {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -35%);
+
+    width: 210px;
+    height: 210px;
+
+    background: #4C1200;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    z-index: 10;
+}
+
+
+/* LOGO IMAGE */
+.logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+/* ================= MAIN ================= */
+
+main {
+    padding-top: 170px;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ================= GALLERY SECTION ================= */
+
+.gallery-section {
+    width: 760px;
+
+    text-align: center;
+}
+
+
+/* TITLE */
+.gallery-section h1 {
+    font-size: 58px;
+    font-weight: 700;
+
+    color: #E89B2F;
+
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    letter-spacing: 2px;
+}
+
+
+/* ================= GALLERY GRID ================= */
+
+.gallery-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    justify-items: center;
+}
+
+
+/* IMAGES */
+.gallery-grid img {
+    width: 160px;
+    height: 160px;
+
+    object-fit: cover;
+
+    transition: 0.3s;
+
+    cursor: pointer;
+}
+
+
+/* HOVER EFFECT */
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
